@@ -1,0 +1,108 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+p{
+    margin:0%;
+    padding: 0%;
+}
+
+.grilla_home{
+    display: grid;
+}
+
+
+header{
+    display: grid; 
+    background-color: black;
+    border-bottom: 10px solid white;   
+    
+}
+
+.nombre_boton_nav{
+    
+    text-decoration: none;
+    color: $color_texto_nav;
+      
+}
+
+.boton_logo{
+    display: flex;
+    
+}
+
+.home_main{
+    display: grid;
+}
+
+img{
+    object-fit: cover;
+}
+
+
+footer{
+    display: grid;
+    background-color: black;
+    border-top: 10px solid white;
+}
+
+.home_carta{
+    display: grid;
+}
+
+
+.home_contactenos{
+    display: flex;
+}
+
+.home_tienda{
+    display: grid;
+}
+
+.tienda{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home_nosotros{
+    display: flex;
+
+}
+
+.nosotros_uno{
+    display: flex;
+
+}
+
+ul{
+    margin: 0%;
+    padding: 0%;
+}
+@media only screen and (max-width:600px){
+    header{
+        height: 200px;
+        width: 100%;     
+    }
+    footer{
+        height: 300px;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width:600px){
+    header{
+        height: 200px;
+        width: 100%;     
+    }
+    footer{
+        height: 250px;
+        width: 100%;
+    }
+
+}
