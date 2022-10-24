@@ -87,13 +87,12 @@ while(opcion !="FIN"){
                 break;        
     }    
     opcion=prompt("Ingrese el numero de acuerdo a la carta y le mostraremos sus menues,\n \n1 Entradas \n2 Ensalada \n3 Poke Bowls \n4 Sushi Rolls \n5 Hot Rolls \n6 Holly woks \n Luego digite FIN en mayuscula para continuar y hacer su pedido".toUpperCase());
-
 }
 
 let hacerPedido = prompt("Ingrese su pedido en mayuscula o FIN de la misma manera terminar)");
 let buscador = platos.find(plato => plato.nombre.toUpperCase() === hacerPedido.toUpperCase());
 
-while(hacerPedido!=="FIN" && buscador){
+while(hacerPedido!=="FIN"){
 if(buscador){
     precioTotal+=buscador.precio;
    console.log(hacerPedido);
