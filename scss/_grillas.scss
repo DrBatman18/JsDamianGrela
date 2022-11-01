@@ -451,9 +451,9 @@
     }
 
     header{
-        grid-template-columns: 20% 70%;
+        grid-template-columns: 20% 70% 5%;
         grid-template-rows: 100%;          
-        grid-template-areas: "logo nav";
+        grid-template-areas: "logo nav carrito";
         align-content: center;
         justify-content: space-evenly;
         
@@ -500,10 +500,19 @@
                 .nombre_boton_nav{            
                     text-decoration: none;
                     color: $color_texto_nav; 
-                                   
-                }                
+                }
+                            
             }            
         }              
+        .carrito{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            height: 100%;            
+        }
+    
+    
     }
 
     .home_main {
