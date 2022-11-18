@@ -718,28 +718,28 @@
         .img_tienda {
             @include img_platos (50%, 50% , contain)
         }
-
-        .plato-uno{      
+    
+        #1{      
             grid-area: hometienda4;
         }
                        
-        .plato-dos{      
+        #2{      
             grid-area: hometienda5;
         }      
         
-        .plato-tres{      
+        #3{      
             grid-area: hometienda6;
         }
 
-        .plato-cuatro{      
+        #4{      
             grid-area: hometienda7;
         }
 
-        .plato-cinco{      
+        #5{      
             grid-area: hometienda8;
         }
 
-        .plato-seis{      
+        #6{      
             grid-area: hometienda9;
         }
 
@@ -747,7 +747,7 @@
             text-align: center;
             grid-area: hometienda11;
         }
-        .plato-siete{
+        #7{
             grid-area: hometienda14;
         }
         
@@ -755,13 +755,13 @@
             text-align: center;
             grid-area: hometienda17; 
         } 
-        .plato-ocho{
+        #8{
             grid-area: hometienda19;
         }
-        .plato-nueve{
+        #9{
             grid-area: hometienda20;
         }
-        .plato-diez{
+        #10{
             grid-area: hometienda21;
         }
 
@@ -770,22 +770,22 @@
             grid-area: hometienda23;
         }
 
-        .plato-once{
+        #11{
             grid-area: hometienda25;
         }
-        .plato-doce{
+        #12{
             grid-area: hometienda26;
         }
-        .plato-trece{
+        #13{
             grid-area: hometienda27;
         }
-        .plato-catorce{
+        #14{
             grid-area: hometienda28;
         }
-        .plato-quince{
+        #15{
             grid-area: hometienda29;
         }
-        .plato-dieciseis{
+        #16{
             grid-area: hometienda30;
         }
 
@@ -793,16 +793,16 @@
             text-align: center;
             grid-area: hometienda32;
         }
-        .plato-diecisiete{
+        #17{
             grid-area: hometienda34;
         }
-        .plato-dieciocho{
+        #18{
             grid-area: hometienda36;
         }
-        .plato-diecinueve{
+        #19{
             grid-area: hometienda37;
         }
-        .plato-veinte{
+        #20{
             grid-area: hometienda39;
         }
 
@@ -811,13 +811,13 @@
             grid-area: hometienda41;
         }
 
-        .plato-veintiuno{
+        #21{
             grid-area: hometienda43;
         }
-        .plato-veintidos{
+        #22{
             grid-area: hometienda44;
         }
-        .plato-veintitres{
+        #23{
             grid-area: hometienda45;
         }
     }
