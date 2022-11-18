@@ -11,6 +11,7 @@
 
     }
 
+
     header{
         grid-template-rows: 70% 20%;
         grid-template-columns: 100%;          
@@ -697,7 +698,6 @@
         align-content: space-around;
         justify-content: space-around;
 
-       
         .titulo_entradas{
             text-align: center;
             grid-area: hometienda2;
@@ -718,111 +718,35 @@
         .img_tienda {
             @include img_platos (50%, 50% , contain)
         }
-    
-        #1{      
-            grid-area: hometienda4;
-        }
-                       
-        #2{      
-            grid-area: hometienda5;
-        }      
-        
-        #3{      
-            grid-area: hometienda6;
-        }
-
-        #4{      
-            grid-area: hometienda7;
-        }
-
-        #5{      
-            grid-area: hometienda8;
-        }
-
-        #6{      
-            grid-area: hometienda9;
-        }
-
+                        
         .titulo_ensalada{
             text-align: center;
             grid-area: hometienda11;
         }
-        #7{
-            grid-area: hometienda14;
-        }
-        
-        .titulo_pokebowls{
+
+       .titulo_pokebowls{
             text-align: center;
             grid-area: hometienda17; 
         } 
-        #8{
-            grid-area: hometienda19;
-        }
-        #9{
-            grid-area: hometienda20;
-        }
-        #10{
-            grid-area: hometienda21;
-        }
-
+       
         .titulo_sushirolls{
             text-align: center;
             grid-area: hometienda23;
         }
-
-        #11{
-            grid-area: hometienda25;
-        }
-        #12{
-            grid-area: hometienda26;
-        }
-        #13{
-            grid-area: hometienda27;
-        }
-        #14{
-            grid-area: hometienda28;
-        }
-        #15{
-            grid-area: hometienda29;
-        }
-        #16{
-            grid-area: hometienda30;
-        }
-
+         
         .titulo_hotrolls{
             text-align: center;
             grid-area: hometienda32;
         }
-        #17{
-            grid-area: hometienda34;
-        }
-        #18{
-            grid-area: hometienda36;
-        }
-        #19{
-            grid-area: hometienda37;
-        }
-        #20{
-            grid-area: hometienda39;
-        }
+       
 
         .titulo_hollywoks{
             text-align: center;
             grid-area: hometienda41;
         }
 
-        #21{
-            grid-area: hometienda43;
-        }
-        #22{
-            grid-area: hometienda44;
-        }
-        #23{
-            grid-area: hometienda45;
-        }
-    }
-
- 
+    } 
+     
     .home_nosotros{
         background-color: black;
         height: 1000px;

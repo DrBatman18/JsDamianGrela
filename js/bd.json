@@ -1,0 +1,186 @@
+[
+    {
+        "id": 1, 
+        "nombre":"Bocadito de Salmon", 
+        "tipo": "ENTRADAS",
+        "img": "../images/Nuestros-Platos/Entradas/Bocadito-de-Salmon.jpg", 
+        "descripcion": "Salmón, aguacate, queso crema, cebolla verdeo, tempurizado y salsa de bocadito.",
+        "precio": 450
+    },   
+    {
+        "id": 2, 
+        "nombre": "Croquetas de Pescado", 
+        "tipo": "ENTRADAS",
+        "img":"../images/Nuestros-Platos/Entradas/Croquetas-de-.jpg",
+        "descripcion":"Croquetas de Pescado y salsa tártara",
+        "precio": 450
+    },
+    {
+        "id": 3, 
+        "nombre": "Croquetas de Cangrejo", 
+        "tipo": "ENTRADAS", 
+        "img":"../images/Nuestros-Platos/Entradas/Croquetas-de-Cangrejo.jpg",
+        "descripcion":"Croquetas de Cangrejo y salsa tártara",
+        "precio": 450
+    },
+    {
+        "id": 4, 
+        "nombre": "Ebi Fuji", 
+        "tipo": "ENTRADAS", 
+        "img":"../images/Nuestros-Platos/Entradas/Ebi-Fuji.jfif",
+        "descripcion":"Camarones Crispy con tope de salsa Fuji",
+        "precio":450
+    },
+    {
+        "id": 5, 
+        "nombre": "Fiesta de Langostinos", 
+        "tipo": "ENTRADAS", 
+        "img":"../images/Nuestros-Platos/Entradas/Fiesta-de-Langostinos.png",
+        "descripcion":"Langostinos tempurizados, empanizados, tempurizados de papas crunchy con salsas fuji, tártara y guacamole.",
+        "precio": 450
+    },
+    {
+        "id": 6, 
+        "nombre": "Wakame", 
+        "tipo": "ENTRADAS",
+        "img": "../images/Nuestros-Platos/Entradas/Wakame.jpg",
+        "descripcion": "Ensalada de algas marinadas", 
+        "precio": 450
+    },
+    {
+        "id": 7, 
+        "nombre": "Neptuno Salad", 
+        "tipo": "ENSALADAS",
+        "img": "../images/Nuestros-Platos/Ensaladas/Neptuno-Salad.png",
+        "descripcion":"Cesta de hoja de arroz, berro tempurizado, wakame, cangrejo desmenuzado, pescado blanco y atún a la plancha, cebolla verdeo, durazno, mango. Salsas: de anguila y picante con tope de salsas fuji y sésamo.",
+        "precio": 300
+    },
+    {
+        "id": 8, 
+        "nombre": "Poke Chicken Dragon", 
+        "tipo": "POKE BOWLS",
+        "img":"../images/Nuestros-Platos/Poke-Bowls/Poke-Chicken-Dragon.jpg",
+        "descripcion":"Arroz de sushi, zanahoria, pepino, aguacate, maní troceado, cebolla verdeo, maíz dulce, frijoles de soya, pollo a la plancha cortado en cubos, wakame marinado, sésamo. Acompañado de 3 salsa a elección: ponzu, anguila, dragón o wasabi.", 
+        "precio": 300
+    },
+    {
+        "id": 9, 
+        "nombre": "Poke Hawai", 
+        "tipo": "POKE BOWLS",
+        "img":"../images/Nuestros-Platos/Poke-Bowls/Poke-Hawai.jfif",
+        "descripcion": "Arroz de sushi, zanahoria, pepino, wakame marinado, atún marinado,aguacate, anana, crocante de atún, cebolla verdeo, salmón, frijoles soya, kanikama crocante, sésamo. Acompañado de 3 salsa a elección: ponzu, anguila, dragón o wasabi.",
+        "precio": 300
+    },
+    {
+        "id": 10, 
+        "nombre": "Poke Spicy Crab", 
+        "tipo": "POKE BOWLS",
+        "img":"../images/Nuestros-Platos/Poke-Bowls/Spicy-Crab-Poke.jpg",
+        "descripcion": "Arroz de sushi, zanahoria, pepino, maní troceado, wakame marinado, camarones apanados, aguacate, maíz dulce frijoles de soya, masago. Acompañado de 3 salsa a elección: ponzu, anguila, dragón o wasabi.",
+        "precio": 300
+    },
+    {
+        "id": 11, 
+        "nombre": "Alaska Roll", 
+        "tipo": "SUSHI ROLLS",
+        "img":"../images/Nuestros-Platos/Sushi_Rolls/Alaska_Roll.jpg",
+        "descripcion": "Salmón, aguacate, queso crema y sésamo.",
+        "precio": 600
+    },
+    {
+        "id": 12, 
+        "nombre": "Avocado Roll", 
+        "tipo": "SUSHI ROLLS",
+        "img":"../images/Nuestros-Platos/Sushi_Rolls/Avocado-Roll.jpg",
+        "descripcion": "Cangrejo empanizado, camarón tempurizado, queso crema, cebolla verdeo, tope de aguacate y salsa con toque picante.",
+        "precio": 600
+    },
+    {
+        "id": 13, 
+        "nombre": "California Roll", 
+        "tipo": "SUSHI ROLLS",
+        "img":"../images/Nuestros-Platos/Sushi_Rolls/California_Roll.jfif",
+        "descripcion": "Cangrejo, aguacate, pepino, masago y semillas de sésamo.",
+        "precio": 600
+    },
+    {
+        "id": 14, 
+        "nombre": "Dinamita Roll", 
+        "tipo": "SUSHI ROLLS",
+        "img":"../images/Nuestros-Platos/Sushi_Rolls/Dinamita_Roll.jpg",
+        "descripcion":"Cangrejo, masago, queso crema y semillas de sésamo.",
+        "precio": 600
+    },
+    {
+        "id": 15, 
+        "nombre": "Sensei Roll", 
+        "tipo": "SUSHI ROLLS",
+        "img":"../images/Nuestros-Platos/Sushi_Rolls/Sensei-Roll.jpg",
+        "descripcion": "Camarón tempurizado, calamar, queso crema, cebolla verdeo, salsa picante con topping de cangrejo desmenuzado, wakame, salsa de anguila y sésamo.",
+        "precio": 600
+    },
+    {
+        "id": 16, 
+        "nombre": "Tentacion Roll", 
+        "tipo": "SUSHI ROLLS",
+        "img":"../images/Nuestros-Platos/Sushi_Rolls/Tentacion-Roll.jpg",
+        "descripcion": "Salmón tempurizado, cebolla verdeo, queso crema, tope de queso tentación, plátano, salsa de anguila y dinamita.",
+        "precio": 600
+    },
+    {
+        "id": 17, 
+        "nombre": "Tatanui Roll", 
+        "tipo": "HOT ROLLS",
+        "img":"../images/Nuestros-Platos/Hot_Rolls/Tatanui-Roll-Hot-Rolls.jpg",
+        "descripcion": "Cangrejo, camarón tempurizado, queso crema, cebolla verdeo con tope de atún y pescado blanco, cangrejo desmenuzado, wakame, salsa picante, sésamo. Langostino empanizado con salsas fuji y anguila.",
+        "precio": 600
+    },
+    {
+        "id": 18, 
+        "nombre": "Tiger Roll", 
+        "tipo": "HOT ROLLS",
+        "img":"../images/Nuestros-Platos/Hot_Rolls/Tiger-Roll-Hot-Rolls.jpg",
+        "descripcion": "Salmón, queso crema y masago.",
+        "precio": 600
+    },
+    {
+        "id": 19, 
+        "nombre": "Tiger Roll Special", 
+        "tipo": "HOT ROLLS",
+        "img":"../images/Nuestros-Platos/Hot_Rolls/Tiger_Roll_Special_Hot_Rolls.jfif",
+        "descripcion": "Cangrejo, kampachi marinado, aguacate, queso crema, tempurizado y apanado en salsa de anguila.",
+        "precio": 600
+    },
+    {
+        "id": 20, 
+        "nombre": "Tokio Roll", 
+        "tipo": "HOT ROLLS",
+        "img":"../images/Nuestros-Platos/Hot_Rolls/tokyo-roll-Hot-Rolls.jpg",
+        "descripcion": "Empanizado con cereal, camarones empanizados,queso crema, aguacate, cebolla verdeo, con topping de camarones empanizados, cebolla verdeo, salsa spice, fuji de anguila.",
+        "precio": 600
+    },
+    {
+        "id": 21, 
+        "nombre": "Chicken wok", 
+        "tipo": "HOLLY WOKS",
+        "img":"../images/Nuestros-Platos/Holly_Woks/chickenwoks_holly_woks.jpg",
+        "descripcion": "Fideos de arroz, salteados con pollo, vegetales y brócoli en salsa de soja.",
+        "precio": 750
+    },
+    {
+        "id": 22, 
+        "nombre": "Surf and Turf", 
+        "tipo": "HOLLY WOKS",
+        "img":"../images/Nuestros-Platos/Holly_Woks/surf_and_turf_holly_woks.png",
+        "descripcion": "Fideos de arroz, salteados con vegetales y salsa de soja, brócoli y langostinos empanizados.",
+        "precio": 750
+    },
+    {
+        "id": 23, 
+        "nombre": "Yakisoba", 
+        "tipo": "HOLLY WOKS",
+        "img":"../images/Nuestros-Platos/Holly_Woks/yakisoa_holly_woks.jpg",
+        "descripcion": "Fideos de arroz, salteados con trocitos de lomito, vegetales y brócoli en salsa yakisoba.",
+        "precio": 750
+    }
+]
