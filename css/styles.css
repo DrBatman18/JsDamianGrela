@@ -96,11 +96,14 @@ ul {
   .grilla_home {
     grid-template-rows: 200px 3000px 300px;
     grid-template-columns: 100%;
-    grid-template-areas: "header" "main" "footer"; }
+    grid-template-areas: "header"
+ "main"
+ "footer"; }
   header {
     grid-template-rows: 70% 20%;
     grid-template-columns: 100%;
-    grid-template-areas: "logo"  "nav";
+    grid-template-areas: "logo" 
+ "nav";
     align-content: center;
     justify-content: space-around;
     padding: 0%;
@@ -138,7 +141,15 @@ ul {
     background-color: black;
     grid-template-rows: 5% 10% 5% 10% 10% 10% 10% 10% 10%;
     grid-template-columns: 80%;
-    grid-template-areas: "homemain1"  "homemain2" "homemain3" "homemain4"  "homemain5"  "homemain6" "homemain7"  "homemain8"  "homemain9";
+    grid-template-areas: "homemain1" 
+ "homemain2"
+ "homemain3"
+ "homemain4" 
+ "homemain5" 
+ "homemain6"
+ "homemain7" 
+ "homemain8" 
+ "homemain9";
     align-content: space-evenly;
     justify-content: space-around; }
     .home_main img {
@@ -179,7 +190,10 @@ ul {
     grid-area: footer;
     grid-template-rows: 30% 10% 10% 10%;
     grid-template-columns: 90%;
-    grid-template-areas: "logo" "botones" "informcion" "redes";
+    grid-template-areas: "logo"
+ "botones"
+ "informcion"
+ "redes";
     align-content: space-evenly;
     justify-content: space-evenly; }
     footer .logo_footer img {
@@ -249,7 +263,35 @@ ul {
     height: 9000px;
     grid-template-columns: 90%;
     grid-template-rows: 0,5% 3% 3% 3% 3% 3% 3% 0,5% 3% 0,5% 3% 3% 3% 0,5% 3% 3% 3% 3% 3% 3% 0,5% 3% 3% 3% 3% 0,5% 3% 3% 3%;
-    grid-template-areas: "hometienda1"  "hometienda2" "hometienda3" "hometienda4" "hometienda5" "hometienda6" "hometienda7" "hometienda8" "hometienda9" "hometienda10"  "hometienda11"  "hometienda12" "hometienda13"  "hometienda14"  "hometienda15" "hometienda16"  "hometienda17"  "hometienda18" "hometienda19"  "hometienda20" "hometienda21" "hometienda22"  "hometienda23"  "hometienda24" "hometienda25"  "hometienda26"  "hometienda27" "hometienda28"  "hometienda29";
+    grid-template-areas: "hometienda1" 
+ "hometienda2"
+ "hometienda3"
+ "hometienda4"
+ "hometienda5"
+ "hometienda6"
+ "hometienda7"
+ "hometienda8"
+ "hometienda9"
+ "hometienda10" 
+ "hometienda11" 
+ "hometienda12"
+ "hometienda13" 
+ "hometienda14" 
+ "hometienda15"
+ "hometienda16" 
+ "hometienda17" 
+ "hometienda18"
+ "hometienda19" 
+ "hometienda20"
+ "hometienda21"
+ "hometienda22" 
+ "hometienda23" 
+ "hometienda24"
+ "hometienda25" 
+ "hometienda26" 
+ "hometienda27"
+ "hometienda28" 
+ "hometienda29";
     align-content: space-around;
     justify-content: space-around; }
     .home_tienda .titulo_plato {
@@ -360,7 +402,9 @@ ul {
   .grilla_home {
     grid-template-rows: 200px 1500px 250px;
     grid-template-columns: 100%;
-    grid-template-areas: "header" "main" "footer"; }
+    grid-template-areas: "header"
+ "main"
+ "footer"; }
   header {
     grid-template-columns: 20% 70% 5%;
     grid-template-rows: 100%;
@@ -411,7 +455,9 @@ ul {
     background-color: black;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 25% 25% 25%;
-    grid-template-areas: "homemain1 homemain2 homemain3" "homemain4 homemain5 homemain6" "homemain7 homemain8 homemain9";
+    grid-template-areas: "homemain1 homemain2 homemain3"
+ "homemain4 homemain5 homemain6"
+ "homemain7 homemain8 homemain9";
     align-content: space-around;
     justify-content: space-evenly; }
     .home_main img {
@@ -452,7 +498,10 @@ ul {
     grid-area: footer;
     grid-template-rows: 25% 10% 20% 20%;
     grid-template-columns: 90%;
-    grid-template-areas: "logo" "botones" "informcion" "redes";
+    grid-template-areas: "logo"
+ "botones"
+ "informcion"
+ "redes";
     align-content: space-evenly;
     justify-content: space-evenly; }
     footer .logo_footer img {
@@ -518,12 +567,26 @@ ul {
       font-family: Arial, Helvetica, sans-serif;
       color: white;
       list-style: none; }
-  .home_tienda {
+  /*.home_tienda {
     background-color: black;
     height: 3700px;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 1% 10% 10% 1% 10% 1% 10% 1% 10% 10% 1% 10% 10% 1% 10%;
-    grid-template-areas: "hometienda1 hometienda2 hometienda3" "hometienda4 hometienda5 hometienda6" "hometienda7 hometienda8 hometienda9" "hometienda10 hometienda11 hometienda12" "hometienda13 hometienda14 hometienda15" "hometienda16 hometienda17 hometienda18" "hometienda19 hometienda20 hometienda21" "hometienda22 hometienda23 hometienda24" "hometienda25 hometienda26 hometienda27" "hometienda28 hometienda29 hometienda30" "hometienda31 hometienda32 hometienda33" "hometienda34 hometienda35 hometienda36" "hometienda37 hometienda38 hometienda39" "hometienda40 hometienda41 hometienda42" "hometienda43 hometienda44 hometienda45";
+    grid-template-areas: "hometienda1 hometienda2 hometienda3"
+ "hometienda4 hometienda5 hometienda6"
+ "hometienda7 hometienda8 hometienda9"
+ "hometienda10 hometienda11 hometienda12"
+ "hometienda13 hometienda14 hometienda15"
+ "hometienda16 hometienda17 hometienda18"
+ "hometienda19 hometienda20 hometienda21"
+ "hometienda22 hometienda23 hometienda24"
+ "hometienda25 hometienda26 hometienda27"
+ "hometienda28 hometienda29 hometienda30"
+ "hometienda31 hometienda32 hometienda33"
+ "hometienda34 hometienda35 hometienda36"
+ "hometienda37 hometienda38 hometienda39"
+ "hometienda40 hometienda41 hometienda42"
+ "hometienda43 hometienda44 hometienda45";
     align-content: space-around;
     justify-content: space-around; }
     .home_tienda .titulo_entradas {
@@ -608,6 +671,7 @@ ul {
       grid-area: hometienda44; }
     .home_tienda .plato-veintitres {
       grid-area: hometienda45; }
+      */
   .home_nosotros {
     background-color: black;
     height: 1000px;
