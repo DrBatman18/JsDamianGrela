@@ -675,6 +675,38 @@
         }   
     }
 
+   .container{
+        h4{
+            font-family: Arial, Helvetica, sans-serif;
+            color: $color_texto_parrafo;
+        }
+        th{
+            font-family: Arial, Helvetica, sans-serif;
+            color: $color_texto_parrafo; 
+        }
+        tr{
+            font-family: Arial, Helvetica, sans-serif;
+            color: $color_texto_parrafo; 
+        }
+   }
+    
+   .card{
+    background-color: black;
+        h5{
+            color: white;
+            font-family: 'Air Americana';
+        }
+        img{
+            @include img_platos (60%, 60% , contain);
+        }
+        p{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 80%;
+        }
+   }
+  
+   
     /*
     .home_tienda{
         background-color: black;

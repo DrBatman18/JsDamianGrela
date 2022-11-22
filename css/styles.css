@@ -48,15 +48,22 @@ footer {
   display: flex; }
 
 .home_tienda {
-  display: grid; }
+  background-color: black; }
 
-.tienda {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center; }
+/*
+.home_tienda{
+    display: grid;
+}
 
+.tienda{
+    
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+*/
 .home_nosotros {
   display: flex; }
 
@@ -96,14 +103,11 @@ ul {
   .grilla_home {
     grid-template-rows: 200px 3000px 300px;
     grid-template-columns: 100%;
-    grid-template-areas: "header"
- "main"
- "footer"; }
+    grid-template-areas: "header" "main" "footer"; }
   header {
     grid-template-rows: 70% 20%;
     grid-template-columns: 100%;
-    grid-template-areas: "logo" 
- "nav";
+    grid-template-areas: "logo"  "nav";
     align-content: center;
     justify-content: space-around;
     padding: 0%;
@@ -141,15 +145,7 @@ ul {
     background-color: black;
     grid-template-rows: 5% 10% 5% 10% 10% 10% 10% 10% 10%;
     grid-template-columns: 80%;
-    grid-template-areas: "homemain1" 
- "homemain2"
- "homemain3"
- "homemain4" 
- "homemain5" 
- "homemain6"
- "homemain7" 
- "homemain8" 
- "homemain9";
+    grid-template-areas: "homemain1"  "homemain2" "homemain3" "homemain4"  "homemain5"  "homemain6" "homemain7"  "homemain8"  "homemain9";
     align-content: space-evenly;
     justify-content: space-around; }
     .home_main img {
@@ -190,10 +186,7 @@ ul {
     grid-area: footer;
     grid-template-rows: 30% 10% 10% 10%;
     grid-template-columns: 90%;
-    grid-template-areas: "logo"
- "botones"
- "informcion"
- "redes";
+    grid-template-areas: "logo" "botones" "informcion" "redes";
     align-content: space-evenly;
     justify-content: space-evenly; }
     footer .logo_footer img {
@@ -263,35 +256,7 @@ ul {
     height: 9000px;
     grid-template-columns: 90%;
     grid-template-rows: 0,5% 3% 3% 3% 3% 3% 3% 0,5% 3% 0,5% 3% 3% 3% 0,5% 3% 3% 3% 3% 3% 3% 0,5% 3% 3% 3% 3% 0,5% 3% 3% 3%;
-    grid-template-areas: "hometienda1" 
- "hometienda2"
- "hometienda3"
- "hometienda4"
- "hometienda5"
- "hometienda6"
- "hometienda7"
- "hometienda8"
- "hometienda9"
- "hometienda10" 
- "hometienda11" 
- "hometienda12"
- "hometienda13" 
- "hometienda14" 
- "hometienda15"
- "hometienda16" 
- "hometienda17" 
- "hometienda18"
- "hometienda19" 
- "hometienda20"
- "hometienda21"
- "hometienda22" 
- "hometienda23" 
- "hometienda24"
- "hometienda25" 
- "hometienda26" 
- "hometienda27"
- "hometienda28" 
- "hometienda29";
+    grid-template-areas: "hometienda1"  "hometienda2" "hometienda3" "hometienda4" "hometienda5" "hometienda6" "hometienda7" "hometienda8" "hometienda9" "hometienda10"  "hometienda11"  "hometienda12" "hometienda13"  "hometienda14"  "hometienda15" "hometienda16"  "hometienda17"  "hometienda18" "hometienda19"  "hometienda20" "hometienda21" "hometienda22"  "hometienda23"  "hometienda24" "hometienda25"  "hometienda26"  "hometienda27" "hometienda28"  "hometienda29";
     align-content: space-around;
     justify-content: space-around; }
     .home_tienda .titulo_plato {
@@ -402,9 +367,7 @@ ul {
   .grilla_home {
     grid-template-rows: 200px 1500px 250px;
     grid-template-columns: 100%;
-    grid-template-areas: "header"
- "main"
- "footer"; }
+    grid-template-areas: "header" "main" "footer"; }
   header {
     grid-template-columns: 20% 70% 5%;
     grid-template-rows: 100%;
@@ -455,9 +418,7 @@ ul {
     background-color: black;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 25% 25% 25%;
-    grid-template-areas: "homemain1 homemain2 homemain3"
- "homemain4 homemain5 homemain6"
- "homemain7 homemain8 homemain9";
+    grid-template-areas: "homemain1 homemain2 homemain3" "homemain4 homemain5 homemain6" "homemain7 homemain8 homemain9";
     align-content: space-around;
     justify-content: space-evenly; }
     .home_main img {
@@ -498,10 +459,7 @@ ul {
     grid-area: footer;
     grid-template-rows: 25% 10% 20% 20%;
     grid-template-columns: 90%;
-    grid-template-areas: "logo"
- "botones"
- "informcion"
- "redes";
+    grid-template-areas: "logo" "botones" "informcion" "redes";
     align-content: space-evenly;
     justify-content: space-evenly; }
     footer .logo_footer img {
@@ -567,111 +525,102 @@ ul {
       font-family: Arial, Helvetica, sans-serif;
       color: white;
       list-style: none; }
-  /*.home_tienda {
-    background-color: black;
-    height: 3700px;
-    grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 1% 10% 10% 1% 10% 1% 10% 1% 10% 10% 1% 10% 10% 1% 10%;
-    grid-template-areas: "hometienda1 hometienda2 hometienda3"
- "hometienda4 hometienda5 hometienda6"
- "hometienda7 hometienda8 hometienda9"
- "hometienda10 hometienda11 hometienda12"
- "hometienda13 hometienda14 hometienda15"
- "hometienda16 hometienda17 hometienda18"
- "hometienda19 hometienda20 hometienda21"
- "hometienda22 hometienda23 hometienda24"
- "hometienda25 hometienda26 hometienda27"
- "hometienda28 hometienda29 hometienda30"
- "hometienda31 hometienda32 hometienda33"
- "hometienda34 hometienda35 hometienda36"
- "hometienda37 hometienda38 hometienda39"
- "hometienda40 hometienda41 hometienda42"
- "hometienda43 hometienda44 hometienda45";
-    align-content: space-around;
-    justify-content: space-around; }
-    .home_tienda .titulo_entradas {
-      text-align: center;
-      grid-area: hometienda2; }
-    .home_tienda .titulo_plato {
-      font-family: Air Americana;
+  .container h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; }
+  .container th {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; }
+  .container tr {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; }
+  .card {
+    background-color: black; }
+    .card h5 {
       color: white;
-      font-size: 20px;
-      margin: 0%;
-      padding: 0%; }
-    .home_tienda .parrafo_plato {
-      color: white;
-      font-size: 15px;
-      text-align: center;
-      font-style: italic; }
-    .home_tienda .btn_plato:hover {
-      width: 50%;
-      background-color: red; }
-    .home_tienda .img_tienda {
-      height: 50%;
-      width: 50%;
+      font-family: 'Air Americana'; }
+    .card img {
+      height: 60%;
+      width: 60%;
       object-fit: contain; }
-    .home_tienda .plato-uno {
-      grid-area: hometienda4; }
-    .home_tienda .plato-dos {
-      grid-area: hometienda5; }
-    .home_tienda .plato-tres {
-      grid-area: hometienda6; }
-    .home_tienda .plato-cuatro {
-      grid-area: hometienda7; }
-    .home_tienda .plato-cinco {
-      grid-area: hometienda8; }
-    .home_tienda .plato-seis {
-      grid-area: hometienda9; }
-    .home_tienda .titulo_ensalada {
-      text-align: center;
-      grid-area: hometienda11; }
-    .home_tienda .plato-siete {
-      grid-area: hometienda14; }
-    .home_tienda .titulo_pokebowls {
-      text-align: center;
-      grid-area: hometienda17; }
-    .home_tienda .plato-ocho {
-      grid-area: hometienda19; }
-    .home_tienda .plato-nueve {
-      grid-area: hometienda20; }
-    .home_tienda .plato-diez {
-      grid-area: hometienda21; }
-    .home_tienda .titulo_sushirolls {
-      text-align: center;
-      grid-area: hometienda23; }
-    .home_tienda .plato-once {
-      grid-area: hometienda25; }
-    .home_tienda .plato-doce {
-      grid-area: hometienda26; }
-    .home_tienda .plato-trece {
-      grid-area: hometienda27; }
-    .home_tienda .plato-catorce {
-      grid-area: hometienda28; }
-    .home_tienda .plato-quince {
-      grid-area: hometienda29; }
-    .home_tienda .plato-dieciseis {
-      grid-area: hometienda30; }
-    .home_tienda .titulo_hotrolls {
-      text-align: center;
-      grid-area: hometienda32; }
-    .home_tienda .plato-diecisiete {
-      grid-area: hometienda34; }
-    .home_tienda .plato-dieciocho {
-      grid-area: hometienda36; }
-    .home_tienda .plato-diecinueve {
-      grid-area: hometienda37; }
-    .home_tienda .plato-veinte {
-      grid-area: hometienda39; }
-    .home_tienda .titulo_hollywoks {
-      text-align: center;
-      grid-area: hometienda41; }
-    .home_tienda .plato-veintiuno {
-      grid-area: hometienda43; }
-    .home_tienda .plato-veintidos {
-      grid-area: hometienda44; }
-    .home_tienda .plato-veintitres {
-      grid-area: hometienda45; }
-      */
+    .card p {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 80%; }
+  /*
+    .home_tienda{
+        background-color: black;
+        height: 3700px;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 1% 10% 10% 1% 10% 1% 10% 1% 10% 10% 1% 10% 10% 1% 10%;
+        grid-template-areas:"hometienda1 hometienda2 hometienda3"
+                            "hometienda4 hometienda5 hometienda6"
+                            "hometienda7 hometienda8 hometienda9"
+                            "hometienda10 hometienda11 hometienda12"
+                            "hometienda13 hometienda14 hometienda15"
+                            "hometienda16 hometienda17 hometienda18"
+                            "hometienda19 hometienda20 hometienda21"
+                            "hometienda22 hometienda23 hometienda24"
+                            "hometienda25 hometienda26 hometienda27"
+                            "hometienda28 hometienda29 hometienda30"
+                            "hometienda31 hometienda32 hometienda33"
+                            "hometienda34 hometienda35 hometienda36"
+                            "hometienda37 hometienda38 hometienda39"
+                            "hometienda40 hometienda41 hometienda42"
+                            "hometienda43 hometienda44 hometienda45";                             
+        align-content: space-around;
+        justify-content: space-around;
+
+        
+        .titulo_entradas{
+            text-align: center;
+            grid-area: hometienda2;
+        } 
+
+        .titulo_plato{
+            @include titulo_platos (white, 20px)
+        }     
+
+        .parrafo_plato{
+            @include parrafo_platos (white,15px)
+        }
+
+        .btn_plato {
+            @include btn_platos (transition 4s)
+        }
+
+        .img_tienda {
+            @include img_platos (50%, 50% , contain)
+        }
+                        
+        .titulo_ensalada{
+            text-align: center;
+            grid-area: hometienda11;
+        }
+
+       .titulo_pokebowls{
+            text-align: center;
+            grid-area: hometienda17; 
+        } 
+       
+        .titulo_sushirolls{
+            text-align: center;
+            grid-area: hometienda23;
+        }
+         
+        .titulo_hotrolls{
+            text-align: center;
+            grid-area: hometienda32;
+        }
+       
+
+        .titulo_hollywoks{
+            text-align: center;
+            grid-area: hometienda41;
+        }
+
+    } 
+     */
   .home_nosotros {
     background-color: black;
     height: 1000px;
