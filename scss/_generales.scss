@@ -62,20 +62,57 @@ footer{
    
 }
 
-/*
-.home_tienda{
-    display: grid;
+#btnCarrito{
+    display: flex;
+    align-items: center; 
+    padding-left: 10%;   
 }
 
-.tienda{
-    
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
+.titulo-tienda{
+    font-family: 'Air Americana';
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 2% 0% 2% 0%;
 }
-*/
+.container{
+
+    h4{
+        font-family: Arial, Helvetica, sans-serif;
+        color:black ;
+    }
+    th{
+        font-family: Arial, Helvetica, sans-serif;
+        color:black ;
+    }
+    tr{
+        font-family: Arial, Helvetica, sans-serif;
+        color:black ; 
+    }
+}
+
+.card{
+background-color: black;
+padding-bottom: 2%;
+    h5{
+        color: white;
+        font-family: 'Air Americana';
+    }
+    img{
+        @include img_platos (35%, 35% , contain);
+        &:hover{
+            height: 60%;
+            width: 60%;
+            transition: 2s;
+        }
+    }
+    p{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 80%;
+    }
+}
+
 .home_nosotros{
     display: flex;
 
@@ -99,6 +136,7 @@ ul{
         height: 300px;
         width: 100%;
     }
+    
 
 }
 

@@ -1,23 +1,22 @@
+//Declaracion de Variables
+
 const cards = document.getElementById('cards')
 const items = document.getElementById('items')
 const footer = document.getElementById('footer')
 const templateCard = document.getElementById('template-card').content
 const templateFooter = document.getElementById('template-footer').content
 const templateCarrito = document.getElementById('template-carrito').content
-
-const modal = document.getElementById('modal').content
+let botonFinalizar = document.getElementById("finalizar")
 const fragment = document.createDocumentFragment()
 let carrito = {}
 
 // Eventos
-// El evento DOMContentLoaded es disparado cuando el documento HTML ha sido completamente cargado y parseado
-
 
 document.addEventListener('DOMContentLoaded', e => {
     fetchData()
     if (localStorage.getItem('carrito')) {
         carrito = JSON.parse(localStorage.getItem('carrito'))
-        pintarCarrito()
+        escribirCarrito()
     }
 })
 cards.addEventListener('click', e => { addCarrito(e) });
@@ -28,11 +27,11 @@ const fetchData = async () => {
     const res = await fetch('../js/bd.json');
     const data = await res.json()
     // console.log(data)
-    pintarCards(data)
+    rellenarCards(data)
 }
 
-// Pintar productos
-const pintarCards = data => {
+// Rellenar productos
+const rellenarCards = data => {
     data.forEach(item => {
         templateCard.querySelector('h5').textContent = item.nombre
         templateCard.querySelector('.descripcion').textContent = item.descripcion
@@ -46,35 +45,37 @@ const pintarCards = data => {
 }
 
 // Agregar al carrito
+
 const addCarrito = e => {
     if (e.target.classList.contains('btn-dark')) {
-        // console.log(e.target.dataset.id)
-        // console.log(e.target.parentElement)
         setCarrito(e.target.parentElement)
+        Toastify({
+            text: "Producto agregado al carrito",
+            position: "center",
+            duration: 3000
+        }).showToast();
     }
     e.stopPropagation()
 
 }
 
 const setCarrito = item => {
-    // console.log(item)
-    const producto = {
+     const producto = {
         title: item.querySelector('h5').textContent,
         precio: item.querySelector('.precio').textContent,
         id: item.querySelector('button').dataset.id,
         cantidad: 1
     }
-    // console.log(producto)
     if (carrito.hasOwnProperty(producto.id)) {
-        producto.cantidad = carrito[producto.id].cantidad + 1
+        producto.cantidad = carrito[producto.id].cantidad + 1        
     }
 
     carrito[producto.id] = { ...producto }
     
-    pintarCarrito()
+    escribirCarrito()
 }
 
-const pintarCarrito = () => {
+const escribirCarrito = () => {
     items.innerHTML = ''
     
     Object.values(carrito).forEach(producto => {
@@ -92,25 +93,26 @@ const pintarCarrito = () => {
     })
     items.appendChild(fragment)
 
-    pintarFooter()
+    escribirFooter()
 
     localStorage.setItem('carrito', JSON.stringify(carrito))
 }
 
-const pintarFooter = () => {
+const escribirFooter = () => {
     footer.innerHTML = ''
     
     if (Object.keys(carrito).length === 0) {
         footer.innerHTML = `
-        <th scope="row" colspan="5">Carrito vacío con innerHTML</th>
+        <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
         `
         return
     }
     
     // sumar cantidad y sumar totales
+
     const nCantidad = Object.values(carrito).reduce((acc, { cantidad }) => acc + cantidad, 0)
     const nPrecio = Object.values(carrito).reduce((acc, {cantidad, precio}) => acc + cantidad * precio ,0)
-    // console.log(nPrecio)
+    
 
     templateFooter.querySelectorAll('td')[0].textContent = nCantidad
     templateFooter.querySelector('span').textContent = nPrecio
@@ -123,18 +125,17 @@ const pintarFooter = () => {
     const boton = document.querySelector('#vaciar-carrito')
     boton.addEventListener('click', () => {
         carrito = {}
-        pintarCarrito()
+        escribirCarrito()
     })
 
 }
 
 const btnAumentarDisminuir = e => {
-    // console.log(e.target.classList.contains('btn-info'))
     if (e.target.classList.contains('btn-info')) {
         const producto = carrito[e.target.dataset.id]
         producto.cantidad++
         carrito[e.target.dataset.id] = { ...producto }
-        pintarCarrito()
+        escribirCarrito()
     }
 
     if (e.target.classList.contains('btn-danger')) {
@@ -145,13 +146,33 @@ const btnAumentarDisminuir = e => {
         } else {
             carrito[e.target.dataset.id] = {...producto}
         }
-        pintarCarrito()
+        escribirCarrito()
     }
     e.stopPropagation()
 }
 
-const btnVerCarrito = document.getElementById('btnVerCarrito')
-
-btnVerCarrito.addEventListener('click', () => { 
-    console.log("hola");
-})
+botonFinalizar.onclick = () => {
+    if(Object.keys(carrito).length === 0){
+        Toastify({
+            text: "Su carro esta vacio, agregre un producto",
+            position: "center",
+            duration: 3000          
+        }).showToast();
+    }else{
+        carrito = {};
+        document.getElementById("items").innerHTML="";
+        let infoTotal = document.getElementById("total");           
+        Toastify({
+            text: "Pronto recibirá un mail de confirmacion",
+            duration: 3000,
+            gravity: 'bottom',
+            position: 'left',
+            style: {
+                background: 'linear-gradient(to right, #00b09b, #96c92d)'
+            }                        
+        }).showToast();
+        
+        localStorage.removeItem("carrito")              
+                        
+    }
+}
